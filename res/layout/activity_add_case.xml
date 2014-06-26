@@ -1,0 +1,59 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textLoadCase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Load Case" />
+
+        <EditText
+            android:id="@+id/inputFilename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textLoadCase"
+            android:layout_marginLeft="66dp"
+            android:layout_marginTop="22dp"
+            android:layout_toRightOf="@+id/textLoadCase"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Filename.ext" />
+
+        <TextView
+            android:id="@+id/txtDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/inputFilename"
+            android:layout_alignRight="@+id/inputFilename"
+            android:layout_below="@+id/btnLoad"
+            android:layout_marginTop="17dp"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/btnAddAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtDetails"
+            android:layout_toRightOf="@+id/inputFilename"
+            android:text="Add All" 
+            android:onClick="addAll"/>
+
+        <Button
+            android:id="@+id/btnLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/inputFilename"
+            android:layout_alignRight="@+id/inputFilename"
+            android:layout_below="@+id/inputFilename"
+            android:layout_marginTop="14dp"
+            android:onClick="loadCase"
+            android:text="Add case" />
+
+    </RelativeLayout>
+    </ScrollView>

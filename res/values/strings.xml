@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+<!-- Dutch Strings -->
+    <string name="app_name">Grass Assessment</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_menu">Startmenu</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_load_case">Aanvragen downloaden</string>
+    <string name="content">content_dummy</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+
+<!-- Strings activity main menu -->
+    <string name="download_cases">Aanvragen Downloaden</string>
+    <string name="load_case">Laad Aanvraag</string>
+
+<!-- Strings activity load case -->
+<!--  -->
+<!--  -->
+
+<!-- Strings general frag: farmer info -->
+    <string name="farmer_info">Info aanvrager</string>
+    <string name="farmer_name">Naam</string>
+    <string name="farmer_address">Adres</string>
+    <string name="farmer_post">Postcode</string>
+    <string name="farmer_city">Stad</string>
+    <string name="farmer_province">Provincie</string>
+    <string name="farmer_relation_id">Relatie nr.</string>
+    <string name="farmer_comments">Opmerkingen aanvrager</string>
+
+<!-- Strings general frag: case info -->
+    <string name="case_info">Info aanvraag</string>
+    <string name="case_id">ID aanvraag</string>
+    <string name="case_date_request">Datum aanvraag</string>
+    <string name="case_animal_species">Diersoorten</string>
+    <string name="case_crop_type">Gewas</string>
+    <string name="case_date_visit">Laatste bezoek</string>
+    <string name="case_damage_continuous">Schade zet zich voort</string>
+    <string name="case_prevention_measures">Afweermiddelen</string>
+    <string name="case_barrier">Afrastering</string>
+    <string name="case_scare_crow">Vogelverschrikkers</string>
+    <string name="case_sticks">Stokken</string>
+    <string name="case_noise_machines">Knalapparaten</string>
+    <string name="case_chasing_away">Verjaagd</string>
+    <string name="case_hunting">Bejaagd</string>
+    <string name="capital_no">NEE</string>
+    <string name="capital_yes">JA</string>
+    <string name="case_prevention_measures_check">Check</string>
+
+<!-- Strings general frag: case comments -->
+    <string name="case_comments">Aantekeningen aanvraag</string>
+    <string name="case_comments_hint">Klik om een aantekening toe te voegen…</string>
+    <string name="case_save_comments">Opslaan Aantekeningen</string>
+
+<!-- Strings map frag -->
+    <string name="map_add_damage_area">Toevoegen schadegebied</string>
+    <string name="map_add_reference_point">Toevoegen referentiepunt</string>
+    <string name="map_select_basemap">Selecteer ondergrond</string>
+    <string name="radio_hybrid">Luchtfoto\'s (Google)</string>
+    <string name="radio_topographic">Topografische kaart</string>
+    <string name="radio_no_basemap">Geen ondergrond</string>
+    <string name="map_select_overlay">Selecteer extra Layer</string>
+    <string name="radio_groenmonitor">Groenmonitor (NDVI)</string>
+    <string name="radio_spot_rgb">SPOT Sensor (RGB)</string>
+    <string name="radio_spot_wdvi">SPOT Sensor (WDVI)</string>
+    <string name="radio_no_overlay">Geen extra layer</string>
+    <string name="map_show_boundaries">Perceelsgrenzen</string>
+    <string name="radio_on">Tonen</string>
+    <string name="radio_off">Niet tonen</string>
+
+<!-- Strings damage frag -->
+    <string name="damage_area_title">Schadegebieden</string>
+    <string name="damage_reference_point">Referentiepunten</string>
+    <string name="damage_details">Details Schade</string>
+    <string name="damage_polygon_name">Naam gebied</string>
+    <string name="damage_area">Oppervlakte</string>
+    <string name="damage_grass_height">Grashoogte</string>
+    <string name="damage_created">Aangemaakt</string>
+    <string name="damage_button_done">Klaar</string>
+    <string name="damage_button_edit">Aanpassen</string>
+    <string name="damage_button_delete">Verwijderen</string>
+    <string name="damage_calculations">Schadeberekening</string>
+    <string name="damage_average_reference">Gemiddelde graslengte referentie:</string>
+    <string name="damage_average_polygons">Gemiddelde graslengte schadegebieden:</string>
+    <string name="damage_length_difference">Verschil in graslengte:</string>
+    <string name="damage_total_area">Total oppervlakte van schadegebieden:</string>
+    <string name="damage_dry_matter">Droge stof:</string>
+    <string name="damage_compensation">Compensatie:</string>
+    <string name="damage_dry_matter_per_cm">Droge stof per cm per ha [kg]</string>
+    <string name="damage_compensation_per_kg">Compensatie per kg droge stof [euro]</string>
+    <string name="damage_recalculate">Herberekenen</string>
+
+</resources>

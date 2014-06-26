@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+<!-- English Strings -->
+    <string name="app_name">Grass Assessment</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_menu">Start Menu</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_load_case">Download Cases</string>
+    <string name="content">content_dummy</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+
+<!-- Strings activity main menu -->
+    <string name="download_cases">Download Cases</string>
+    <string name="load_case">Load Case</string>
+
+<!-- Strings activity load case -->
+<!--  -->
+<!--  -->
+
+<!-- Strings general frag: farmer info -->
+    <string name="farmer_info">Farmer info</string>
+    <string name="farmer_name">Name</string>
+    <string name="farmer_address">Address</string>
+    <string name="farmer_post">Postal code</string>
+    <string name="farmer_city">City</string>
+    <string name="farmer_province">Province</string>
+    <string name="farmer_relation_id">Relation ID</string>
+    <string name="farmer_comments">Farmer comments</string>
+
+<!-- Strings general frag: case info -->
+    <string name="case_info">Case info</string>
+    <string name="case_id">Case ID</string>
+    <string name="case_date_request">Date of request</string>
+    <string name="case_animal_species">Animal species</string>
+    <string name="case_crop_type">Crop type</string>
+    <string name="case_date_visit">Date last visit</string>
+    <string name="case_damage_continuous">Damage continuous</string>
+    <string name="case_prevention_measures">Prevention measures</string>
+    <string name="case_barrier">Barrier</string>
+    <string name="case_scare_crow">Scare crows</string>
+    <string name="case_sticks">Sticks</string>
+    <string name="case_noise_machines">Noise machines</string>
+    <string name="case_chasing_away">Chased away</string>
+    <string name="case_hunting">Hunted</string>
+    <string name="capital_no">NO</string>
+    <string name="capital_yes">YES</string>
+    <string name="case_prevention_measures_check">Check</string>
+
+<!-- Strings general frag: case comments -->
+    <string name="case_comments">Case comments</string>
+    <string name="case_comments_hint">Click to enter comments…</string>
+    <string name="case_save_comments">Save Comments</string>
+
+<!-- Strings map frag -->
+    <string name="map_add_damage_area">Add Damaged Area</string>
+    <string name="map_add_reference_point">Add Reference Point</string>
+    <string name="map_select_basemap">Select Basemap</string>
+    <string name="radio_hybrid">Satellite Image (Google)</string>
+    <string name="radio_topographic">Topographic Map</string>
+    <string name="radio_no_basemap">No Basemap</string>
+    <string name="map_select_overlay">Select extra layer</string>
+    <string name="radio_groenmonitor">Groenmonitor (NDVI)</string>
+    <string name="radio_spot_rgb">SPOT Sensor (RGB)</string>
+    <string name="radio_spot_wdvi">SPOT Sensor (WDVI)</string>
+    <string name="radio_no_overlay">No extra layer</string>
+    <string name="map_show_boundaries">Parcel Boundaries</string>
+    <string name="radio_on">Show</string>
+    <string name="radio_off">Don\'t show</string>
+
+<!-- Strings damage frag -->
+    <string name="damage_area_title">Damage Areas</string>
+    <string name="damage_reference_point">Reference Points</string>
+    <string name="damage_details">Damage Details</string>
+    <string name="damage_polygon_name">Polygon name</string>
+    <string name="damage_area">Area</string>
+    <string name="damage_grass_height">Grass height</string>
+    <string name="damage_created">Created</string>
+    <string name="damage_button_done">Done</string>
+    <string name="damage_button_edit">Edit</string>
+    <string name="damage_button_delete">Delete</string>
+    <string name="damage_calculations">Damage Calculation</string>
+    <string name="damage_average_reference">Average grasslength reference:</string>
+    <string name="damage_average_polygons">Average grasslength damage areas:</string>
+    <string name="damage_length_difference">Grasslength difference:</string>
+    <string name="damage_total_area">Total area of damage areas:</string>
+    <string name="damage_dry_matter">Dry matter:</string>
+    <string name="damage_compensation">Compensation:</string>
+    <string name="damage_dry_matter_per_cm">Dry matter per cm per ha [kg]</string>
+    <string name="damage_compensation_per_kg">Compensation per kg dry matter [euro]</string>
+    <string name="damage_recalculate">Re-calculate</string>
+
+</resources>

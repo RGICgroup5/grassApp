@@ -1,0 +1,65 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/load_case_bg"
+    tools:context=".MainMenuActivity" >
+
+    <Button
+        android:id="@+id/btnLoadCase"
+        style="@style/button_text"
+        android:background="@drawable/blue_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/centerPoint"
+        android:onClick="loadCase"
+        android:text="@string/load_case" />
+
+    <TextView
+        android:id="@+id/centerPoint"
+        android:text=""
+        android:layout_width="20dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/btnAddCase"
+        style="@style/button_text"
+        android:background="@drawable/blue_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/centerPoint"
+        android:onClick="addCase"
+        android:text="@string/download_cases" />
+
+    <ImageButton
+        android:id="@+id/btnToDutch"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/flag_netherlands"
+        android:onClick="changeToDutch" />
+
+    <ImageButton
+        android:id="@+id/btnToEnglish"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_toLeftOf="@id/btnToDutch"
+        android:background="@drawable/flag_united_kingdom"
+        android:onClick="changeToEnglish" />
+
+</RelativeLayout>

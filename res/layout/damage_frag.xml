@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/general_info_bg"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="55"
+        android:orientation="vertical"
+        android:showDividers="middle" >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/damage_area"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#000000" />
+
+        <ListView
+            android:id="@+id/listDamage"
+            android:layout_width="fill_parent"
+            android:layout_height="193dp"
+            android:layout_weight="0.84" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/damage_reference_point"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#000000" />
+
+        <ListView
+            android:id="@+id/listDamage2"
+            android:layout_width="fill_parent"
+            android:layout_height="323dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="25" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="55"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/damage_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/damage_details"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/damage_polygon_name"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/txtName"
+                    android:layout_below="@+id/txtName"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/damage_area"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtGrassHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/txtArea"
+                    android:layout_below="@+id/txtArea"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/damage_grass_height"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/txtGrassHeight"
+                    android:layout_below="@+id/txtGrassHeight"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/damage_created"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtNameContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txtName"
+                    android:layout_alignBottom="@+id/txtName"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/txtArea"
+                    android:text=""
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/inputName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/txtNameContent"
+                    android:layout_marginLeft="160dp"
+                    android:ems="10"
+                    android:imeOptions="actionDone"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtAreaContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txtArea"
+                    android:layout_alignBottom="@+id/txtArea"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/txtArea"
+                    android:text=""
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtGrassHeightContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txtGrassHeight"
+                    android:layout_alignBottom="@+id/txtGrassHeight"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/txtArea"
+                    android:text=""
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/inputGrassHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/txtGrassHeightContent"
+                    android:layout_alignLeft="@+id/inputName"
+                    android:ems="10"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtDateContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txtDate"
+                    android:layout_alignBottom="@+id/txtDate"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/txtArea"
+                    android:text=""
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btnDoneDamage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDateContent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_toRightOf="@+id/btnEdit"
+                    android:text="@string/damage_button_done" />
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/btnDoneDamage"
+                    android:layout_marginLeft="21dp"
+                    android:layout_toRightOf="@+id/btnDoneDamage"
+                    android:text="@string/damage_button_delete" />
+
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDate"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="17dp"
+                    android:text="@string/damage_button_edit" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/calculations"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/damage_calculations"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/damage_average_reference"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtAverageDam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/txtAverageRef"
+                    android:layout_below="@+id/txtAverageRef"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txtAverageDam"
+                    android:layout_alignBottom="@+id/txtAverageDam"
+                    android:layout_alignLeft="@+id/textView1"
+                    android:textSize="18sp"
+                    android:text="@string/damage_average_polygons" />
+
+                <TextView
+                    android:id="@+id/txtAverageRef"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView1"
+                    android:layout_alignBottom="@+id/textView1"
+                    android:textSize="18sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp" />
+
+                <TextView
+                    android:id="@+id/txtDifference"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/txtAverageDam"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/txtAverageDam"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txtDifference"
+                    android:layout_alignBottom="@+id/txtDifference"
+                    android:layout_alignLeft="@+id/textView5"
+                    android:textSize="18sp"
+                    android:text="@string/damage_length_difference" />
+
+                <TextView
+                    android:id="@+id/txtTotalArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/txtDifference"
+                    android:layout_below="@+id/txtDifference"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txtTotalArea"
+                    android:layout_alignBottom="@+id/txtTotalArea"
+                    android:layout_alignLeft="@+id/textView7"
+                    android:textSize="18sp"
+                    android:text="@string/damage_total_area" />
+
+                <TextView
+                    android:id="@+id/txtDryMatter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/txtTotalArea"
+                    android:layout_below="@+id/txtTotalArea"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txtDryMatter"
+                    android:layout_alignBottom="@+id/txtDryMatter"
+                    android:textSize="18sp"
+                    android:layout_alignLeft="@+id/textView9"
+                    android:text="@string/damage_dry_matter" />
+
+                <TextView
+                    android:id="@+id/txtCompensation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/txtDryMatter"
+                    android:layout_below="@+id/txtDryMatter"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txtCompensation"
+                    android:layout_alignBottom="@+id/txtCompensation"
+                    android:layout_alignLeft="@+id/textView4"
+                    android:textSize="18sp"
+                    android:text="@string/damage_compensation" />
+
+                <EditText
+                    android:id="@+id/inputKgDryMatterPer"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView3"
+                    android:layout_marginTop="55dp"
+                    android:ems="10"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:text="150"
+                    android:textSize="18sp" >
+
+                    </EditText>
+
+                <EditText
+                    android:id="@+id/inputEuroPerKg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/inputKgDryMatterPer"
+                    android:layout_toLeftOf="@+id/textView6"
+                    android:ems="10"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:text="0.25"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/inputEuroPerKg"
+                    android:textSize="18sp"
+                    android:layout_toRightOf="@+id/inputKgDryMatterPer"
+                    android:text="@string/damage_dry_matter_per_cm" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/inputEuroPerKg"
+                    android:layout_toRightOf="@+id/inputEuroPerKg"
+                    android:textSize="18sp"
+                    android:text="@string/damage_compensation_per_kg" />
+
+                <Button
+                    android:id="@+id/btnReCalculate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/inputEuroPerKg"
+                    android:layout_below="@+id/inputEuroPerKg"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/damage_recalculate" />
+
+                <NumberPicker
+                    android:id="@+id/np"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/textView4" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
