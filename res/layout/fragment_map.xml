@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="75"
+            android:background="#003200"
+            android:orientation="vertical"
+            android:showDividers="middle" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6"
+                    android:text="@string/map_add_damage_area"
+                    android:textColor="#FFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/btnLayers"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/icon_polygon" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#FFF" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+
+                <ImageButton
+                    android:id="@+id/btnAddPolygonX"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_add_polygon" />
+
+                <ImageButton
+                    android:id="@+id/btnUndoX"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_delete_vertex" />
+
+                <ImageButton
+                    android:id="@+id/btnCancelX"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@drawable/button_cancel_polyline" />
+
+                <ImageButton
+                    android:id="@+id/btnDoneX"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_complete_polyline" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6"
+                    android:text="@string/map_add_reference_point"
+                    android:textColor="#FFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/icon_reference" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#FFF" />
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+
+            <ImageButton
+                android:id="@+id/btnAddReferenceX"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/button_add_reference" />
+
+            <ImageButton
+                android:id="@+id/btnCancelRefX"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="140dp"
+                android:background="@drawable/button_cancel_polyline" />
+
+            <ImageButton
+                android:id="@+id/btnDoneRefX"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_complete_polyline" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6"
+                    android:text="@string/map_select_basemap"
+                    android:textColor="#FFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/icon_map" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#FFF" />
+
+            <RadioGroup
+                android:id="@+id/radioBasemap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radioHybrid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/radio_hybrid"
+                    android:textColor="#FFF"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radioTopographic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_topographic"
+                    android:textColor="#FFF"
+                    android:textSize="20sp" />
+                
+                <RadioButton
+                    android:id="@+id/radioNoBasemap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_no_basemap"
+                    android:textColor="#FFF"
+                    android:textSize="20sp" />
+                
+            </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingTop="5dp" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6"
+                    android:text="@string/map_select_overlay"
+                    android:textColor="#FFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/icon_layers" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/View01"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#FFF" />
+            
+            <RadioGroup
+                android:id="@+id/radioOverlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            
+                <RadioButton
+                    android:id="@+id/radioGroenmonitor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_groenmonitor"
+                    android:textColor="#FFF"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radioSpotRGB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_spot_rgb"
+                    android:textColor="#FFF"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radioSpotWDVI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_spot_wdvi"
+                    android:textColor="#FFF"
+                    android:textSize="20sp" />
+                
+                <RadioButton
+                    android:id="@+id/radioNoOverlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_no_overlay"
+                    android:textColor="#FFF"
+                    android:textSize="20sp" 
+                    android:checked="true" />
+                
+            </RadioGroup>
+            
+             <LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="5dp"
+                 android:paddingTop="5dp" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6"
+                    android:text="@string/map_show_boundaries"
+                    android:textColor="#FFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/icon_layers" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/View01"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#FFF" />
+            
+            <RadioGroup
+                android:id="@+id/radioBoundaries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            
+                <RadioButton
+                    android:id="@+id/radioOn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_on"
+                    android:textColor="#FFF"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radioOff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_off"
+                    android:textColor="#FFF"
+                    android:textSize="20sp"
+                    android:checked="true" />
+                
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="25" >
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <ImageView
+                android:id="@+id/crossHair"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_crosshair" />
+
+            <ImageView
+                android:id="@+id/legendWDVI"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/legend_wdvi" />
+            
+            <ImageView
+                android:id="@+id/legendGroenmonitor"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/legend_groenmonitor" />
+
+            <TextView
+                android:id="@+id/textViewLow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Low"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+            
+            <TextView
+                android:id="@+id/textViewHigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="270dp"
+                android:text="High"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+            
+            <TextView
+                android:id="@+id/textViewLegend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginBottom="55dp"
+                android:layout_marginLeft="65dp"
+                android:text="Legend WDVI"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

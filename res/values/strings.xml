@@ -2,7 +2,7 @@
 <resources>
 	
 <!-- Dutch Strings -->
-    <string name="app_name">Grass Assessment</string>
+    <string name="app_name">GrassApp</string>
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
@@ -15,7 +15,7 @@
 
 <!-- Strings activity main menu -->
     <string name="download_cases">Aanvragen Downloaden</string>
-    <string name="load_case">Laad Aanvraag</string>
+    <string name="load_case">Open Aanvraag</string>
 
 <!-- Strings activity load case -->
 <!--  -->
@@ -41,7 +41,7 @@
     <string name="case_damage_continuous">Schade zet zich voort</string>
     <string name="case_prevention_measures">Afweermiddelen</string>
     <string name="case_barrier">Afrastering</string>
-    <string name="case_scare_crow">Vogelverschrikkers</string>
+    <string name="case_scare_crow">Vogelverschrikker</string>
     <string name="case_sticks">Stokken</string>
     <string name="case_noise_machines">Knalapparaten</string>
     <string name="case_chasing_away">Verjaagd</string>
@@ -54,6 +54,9 @@
     <string name="case_comments">Aantekeningen aanvraag</string>
     <string name="case_comments_hint">Klik om een aantekening toe te voegen…</string>
     <string name="case_save_comments">Opslaan Aantekeningen</string>
+    <string name="case_export_case">Aanvraag Emailen</string>
+    <string name="case_button_export_case">Exporteren</string>
+    <string name="case_popup_email">Kies uw email applicatie…</string>
 
 <!-- Strings map frag -->
     <string name="map_add_damage_area">Toevoegen schadegebied</string>
@@ -70,6 +73,10 @@
     <string name="map_show_boundaries">Perceelsgrenzen</string>
     <string name="radio_on">Tonen</string>
     <string name="radio_off">Niet tonen</string>
+    <string name="map_legend_WDVI">Legenda WDVI</string>
+    <string name="map_legend_Groenmonitor">Legenda Groenmonitor</string>
+    <string name="map_legend_low">Laag</string>
+    <string name="map_legend_high">Hoog</string>
 
 <!-- Strings damage frag -->
     <string name="damage_area_title">Schadegebieden</string>

@@ -168,6 +168,7 @@ public class Case implements Parcelable{
 	}
 	
 	private void setInitialArea(String startArea) {
+		// interpret area from XML
 		DamageArea nwInitialArea = new DamageArea("Aanvrager veld " + initialAreas.size());
 		String text;
 		if (startArea.startsWith("POLYGON((")){

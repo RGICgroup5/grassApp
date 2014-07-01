@@ -2,7 +2,7 @@
 <resources>
 	
 <!-- English Strings -->
-    <string name="app_name">Grass Assessment</string>
+    <string name="app_name">GrassApp</string>
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
@@ -15,7 +15,7 @@
 
 <!-- Strings activity main menu -->
     <string name="download_cases">Download Cases</string>
-    <string name="load_case">Load Case</string>
+    <string name="load_case">Open Case</string>
 
 <!-- Strings activity load case -->
 <!--  -->
@@ -54,6 +54,9 @@
     <string name="case_comments">Case comments</string>
     <string name="case_comments_hint">Click to enter comments…</string>
     <string name="case_save_comments">Save Comments</string>
+    <string name="case_export_case">Email Case</string>
+    <string name="case_button_export_case">Export</string>
+    <string name="case_popup_email">Choose your email application…</string>
 
 <!-- Strings map frag -->
     <string name="map_add_damage_area">Add Damaged Area</string>
@@ -70,6 +73,10 @@
     <string name="map_show_boundaries">Parcel Boundaries</string>
     <string name="radio_on">Show</string>
     <string name="radio_off">Don\'t show</string>
+    <string name="map_legend_WDVI">Legend WDVI</string>
+    <string name="map_legend_Groenmonitor">Legend Groenmonitor</string>
+    <string name="map_legend_low">Low</string>
+    <string name="map_legend_high">High</string>
 
 <!-- Strings damage frag -->
     <string name="damage_area_title">Damage Areas</string>

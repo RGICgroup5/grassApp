@@ -9,9 +9,9 @@ import java.util.List;
 
 import nl.faunafonds.grassdamageassessment.R;
 import nl.faunafonds.grassdamageassessment.other.Case;
-import nl.faunafonds.grassdamageassessment.other.ParseRelationsXML;
-import nl.faunafonds.grassdamageassessment.other.ParseXML;
 import nl.faunafonds.grassdamageassessment.other.Relation;
+import nl.faunafonds.grassdamageassessment.parsers.ParseRelationsXML;
+import nl.faunafonds.grassdamageassessment.parsers.ParseCaseXML;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -25,6 +25,12 @@ import android.widget.ListView;
 import android.widget.Toast;
 import android.view.View;
 
+/**
+ * This is the second activity of the app where the case is chosen, it continues to the MainActivity. 
+ * @author Group 5, RGIC 2014, WUR
+ * @version 0.1
+ */
+
 public class LoadCaseActivity extends Activity {
 
 	List<Case> cases = null;
@@ -36,15 +42,14 @@ public class LoadCaseActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_load_case);
 
+	    System.gc();
 		ListView listView = (ListView) findViewById(R.id.list);
-		//List<Case> cases = null;
-		/*Toast.makeText(getApplicationContext(), downloadsDir + "/employees.xml", 
-				Toast.LENGTH_SHORT).show();*/
-		//File xmlFile = new File(downloadsDir,"employees.xml");
+		
 		try {
+			// Determine which XML files in the internal storage should parsed.
 			ParseRelationsXML relationsParser = new ParseRelationsXML();			
 			
-			ParseXML parser = new ParseXML();
+			ParseCaseXML parser = new ParseCaseXML();
 
 			File[] files = getFilesDir().listFiles();
 			ArrayList<InputStream> inputStreamList = new ArrayList<InputStream>();
@@ -60,11 +65,12 @@ public class LoadCaseActivity extends Activity {
 				}
 			}
 
+			// Parse cases and relation
 			ArrayList<Integer> removeCases = new ArrayList<Integer>();
 			relations = relationsParser.parse(inputStreamListRelations);
-			//Toast.makeText(this, String.format("%f", relations.size()), Toast.LENGTH_LONG).show();
 			cases = parser.parse(inputStreamList);
 			
+			// Add the relations to the cases
 			for (int i=0;i<cases.size();i++){
 				String relID = cases.get(i).getRelatieID();
 				for (int j=0;j<relations.size();j++){
@@ -74,6 +80,7 @@ public class LoadCaseActivity extends Activity {
 				}
 			}
 			
+			// Delete double cases (when saved) and change the order
 			for (int i=0;i<cases.size();i++){
 				if (cases.get(i).getSavedDate().equals("nvt")){
 					for (int j=0;j<cases.size();j++){
@@ -88,6 +95,7 @@ public class LoadCaseActivity extends Activity {
 				}
 			}
 			
+			// Add the cases to the list in the gui
 			ArrayAdapter<Case> adapter = 
 					new ArrayAdapter<Case>(this,R.layout.list_item, casesAd);
 			listView.setAdapter(adapter);
@@ -95,12 +103,10 @@ public class LoadCaseActivity extends Activity {
 			e.printStackTrace();
 		}
 		listView.setOnItemClickListener(new OnItemClickListener() {
+			// Manage when a case in the listview is tapped
 			  @Override
 			  public void onItemClick(AdapterView<?> parent, View view,
 			    int position, long id) {
-				  /*Toast.makeText(getApplicationContext(),
-			      "Click ListItem Number " + position, Toast.LENGTH_LONG)
-			      .show();*/
 				  Intent intent = new Intent(getApplicationContext(), MainActivity.class);
 				  intent.putExtra("case", casesAd.get(position));
 				  startActivity(intent);
@@ -108,11 +114,19 @@ public class LoadCaseActivity extends Activity {
 			  }
 		});
 	}
+
+	/**
+	 * This method executes when the back button is clicked, it goes back to the MainMenuActivity.
+	 * @author Group 5, RGIC 2014, WUR
+	 * @version 0.1
+	 * @param int keyCode, KeyEvent event
+	 * @return boolean 
+	 */
 	
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event)  {
 	    if (keyCode == KeyEvent.KEYCODE_BACK ) {
-	    	Intent intent = new Intent(this, MainMenuActivity.class);
+	    	Intent intent = new Intent(this, MenuActivity.class);
 			startActivity(intent);
 			finish();
 	        return true;
