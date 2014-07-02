@@ -7,3 +7,6 @@ The commisioners for this project are Faunafonds, Overheul and Alterra.
 
 In order to be able to use the app some case data is needed. A build version (apk file) of the app including some test data
 can be downloaded here: https://www.dropbox.com/sh/ntu8ghqtuh3kxuv/AADGqLqENiBN0KmRf9JanKVPa
+
+IMPORTANT:
+The Google Maps API KEY is removed in the code. Request your own API KEY at https://developers.google.com/maps/documentation/android/start#obtain_a_google_maps_api_key
