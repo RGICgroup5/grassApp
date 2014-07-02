@@ -23,9 +23,11 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+            
+<!-- Request your own API KEY at https://developers.google.com/maps/documentation/android/start#obtain_a_google_maps_api_key -->
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyBhbxd42e9V7Jo1w8_56lLVvzwN-1cnBj4" />
+            android:value="..." />
 
         <activity
             android:name="nl.faunafonds.grassdamageassessment.activities.MainActivity"
